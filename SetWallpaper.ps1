@@ -16,7 +16,7 @@ $basePath = "C:\Your\Path\Wallpaper-auto-update-Tuto\images" #Edit this path
 
 if ($hour -ge 5 -and $hour -lt 10) { #this choose a images depending of the time of the day
     $wallpaper = "$basePath\morning.jpg"
-} elseif ($hour -ge 10 -and $hour -lt 17) {
+} elseif ($hour -ge 10 -and $hour -lt 18) {
     $wallpaper = "$basePath\afternoon.jpg"
 } elseif ($hour -ge 18 -and $hour -lt 22) {
     $wallpaper = "$basePath\evening.jpg"
