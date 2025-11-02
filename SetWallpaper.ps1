@@ -1,4 +1,7 @@
 function Set-Wallpaper($path) {
+    # Toujours en mode Fill
+    Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name WallpaperStyle -Value 10
+    Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name TileWallpaper   -Value 0
     Add-Type @"
     using System.Runtime.InteropServices;
     public class Wallpaper {
